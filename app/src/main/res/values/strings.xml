@@ -5,8 +5,26 @@
     <!-- Strings related to login -->
     <string name="prompt_email">Correo</string>
     <string name="prompt_password">Contraseña</string>
+    <string name="prompt_verify_password">Verificar Contraseña</string>
+    <string name="prompt_name">Nombre</string>
+    <string name="prompt_last_name">Apellido Paterno</string>
+    <string name="prompt_last_name_m">Apellido Materno</string>
+    <string name="prompt_address">Domicilio</string>
+    <string name="prompt_residence">País y estado de residencia</string>
+    <string name="prompt_housing">Tipo de vivienda</string>
+    <string name="prompt_cellphone">Celular</string>
+    <string name="prompt_telefono">Teléfono fijo</string>
+    <string name="prompt_company">Empresa</string>
+    <string name="prompt_company_address">Domicilio Empresa</string>
+    <string name="prompt_position">Puesto</string>
+    <string name="prompt_salary">Sueldo</string>
+    <string name="prompt_antiguity">Antigüedad</string>
+    <string name="prompt_birth_date">Fecha de nacimiento</string>
+    <string name="prompt_nacionality">Nacionalidad</string>
+    <string name="prompt_city">Ciudad Natal</string>
     <string name="action_sign_in">Iniciar Sesión</string>
-    <string name="action_register">Crear Cuenta</string>
+    <string name="action_register">Registrarse</string>
+    <string name="action_create_account">Crear Cuenta</string>
     <string name="action_forgot_password">Olvido su contraseña?</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="error_invalid_email">This email address is invalid</string>
@@ -16,4 +34,7 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string-array name="settings">
+        <item>Cerrar sesión</item>
+    </string-array>
 </resources>

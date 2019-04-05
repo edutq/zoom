@@ -1,29 +1,72 @@
 package com.example.edu.clickimage;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
+public class Usuario {
 
-public class Usuario extends AppCompatActivity {
+    private int id;
+    private String nombre;
+    private String apellido_p;
+    private String apellido_m;
+    private String correo;
+    private Perfil_usuario perfil;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        setTheme(R.style.AppTheme);
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_usuario);
+    public Usuario(){
+
+        this.nombre = "";
+        this.apellido_m = "";
+        this.apellido_p = "";
+        this.correo = "";
+        this.id = 0;
+        this.perfil = null;
+
     }
 
-    public void comprar(View view){
+    public Usuario(Usuario user) {
 
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-
+        this.nombre = user.nombre;
+        this.id = user.id;
+        this.apellido_p = user.apellido_p;
+        this.apellido_m = user.apellido_m;
+        this.correo = user.correo;
+        this.perfil = user.perfil;
     }
 
-    public void terrenos(View view){
+    public int getId() {
+        return id;
+    }
 
-        Intent intent = new Intent(this, Terrenos_usuarios.class);
-        startActivity(intent);
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido_p() {
+        return apellido_p;
+    }
+
+    public void setApellido_p(String apellido_p) {
+        this.apellido_p = apellido_p;
+    }
+
+    public String getApellido_m() {
+        return apellido_m;
+    }
+
+    public void setApellido_m(String apellido_m) {
+        this.apellido_m = apellido_m;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
     }
 }
